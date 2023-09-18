@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('delete-dwpcll:server');
+var debug = require('debug')('dwpcii:server');
 var http = require('http');
 
 /**
@@ -19,14 +19,14 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+var server = http.createServer(app);// (req, res)=>{...}
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
 server.listen(port);
-server.on('error', onError);
+server.on('error', onError); // callback
 server.on('listening', onListening);
 
 /**
@@ -88,5 +88,3 @@ function onListening() {
     : 'port ' + addr.port;
   debug('📢 Listening on ' + bind);
 }
-
-
