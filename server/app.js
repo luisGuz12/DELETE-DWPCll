@@ -73,9 +73,7 @@ app.use((req, res, next) => {
     log.info('✔ verificacion de conexicion a db exitosa');
     next();
   } else {
-    res
-      .status(503)
-      .json({ message: 'Servicio no disponible en estos momentos' });
+    res.status(503).render('error/e503View', { layout: 'error' });
   }
 });
 // Se establecen los middlewares
