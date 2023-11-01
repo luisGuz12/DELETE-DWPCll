@@ -2,7 +2,7 @@
 
 // Get '/project/projects'
 const projects = (req, res) => {
-  res.send("🚧 UNDER CONSTRUCTION GET '/project/projects'🚧");
+  res.render('project/addView');
 };
 
 // Get '/project/dashboard'
@@ -12,7 +12,7 @@ const dashboard = (req, res) => {
 
 // Get '/project/projects'
 const addform = (req, res) => {
-  res.send("🚧 UNDER CONSTRUCTION GET '/project/add-form'🚧");
+  res.render('project/addView');
 };
 
 // Get '/project/add'

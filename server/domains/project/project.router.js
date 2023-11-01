@@ -15,7 +15,7 @@ router.get('/', userController.dashboard);
 router.get('/dashboard', userController.dashboard);
 
 // GET '/project/add-form
-router.get('/add-form', userController.addform);
+router.get('project/addView', userController.addform);
 
 // GET '/project/add
 router.get('/add', userController.add);
