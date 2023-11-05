@@ -20,9 +20,15 @@ const add = (req, res) => {
   res.render('project/addView');
 };
 
+// POST "/project/add"
+const addPost = (req, res) => {
+  res.status(200).json(req.body);
+};
+
 export default {
   projects,
   dashboard,
   addform,
   add,
+  addPost,
 };

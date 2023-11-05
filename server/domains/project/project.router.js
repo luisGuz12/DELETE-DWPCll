@@ -3,6 +3,7 @@ import { Router } from 'express';
 
 // Importando el controlador
 import userController from './project.controller';
+import projectController from './project.controller';
 
 // Creando una instancia del enrutador
 const router = new Router();
@@ -18,7 +19,9 @@ router.get('/dashboard', userController.dashboard);
 router.get('project/addView', userController.addform);
 
 // GET '/project/add
-router.get('/add', userController.add);
+router.get('/add', projectController.add);
 
+// POST "/project/add"
+router.post('/add', projectController.addPost);
 // Exporto este tramo de ruta
 export default router;
