@@ -17,7 +17,7 @@ const addform = (req, res) => {
 
 // Get '/project/add'
 const add = (req, res) => {
-  res.send("🚧 UNDER CONSTRUCTION GET '/project/add'🚧");
+  res.render('project/addView');
 };
 
 export default {
