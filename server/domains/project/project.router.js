@@ -44,6 +44,9 @@ router.put(
 
 // DELETE "/project/:id"
 router.delete('/:id', projectController.deleteProject);
+<<<<<<< HEAD
 
+=======
+>>>>>>> d518b8e (📚creando end-point de borrado)
 // Exporto este tramo de ruta
 export default router;
