@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 export default async function deleteProject(id) {
   try {
     const url = `${window.location.protocol}//${window.location.host}/project/${id}`;
@@ -21,4 +19,3 @@ export default async function deleteProject(id) {
     console.error(error.message);
   }
 }
->>>>>>> 2e021c4 (📚creando end-point de borrado)
