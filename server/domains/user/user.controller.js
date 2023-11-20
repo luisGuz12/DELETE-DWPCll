@@ -1,4 +1,3 @@
-// Action Methods
 import log from '../../config/winston';
 // Action Methods
 
@@ -9,9 +8,9 @@ const login = (req, res) => {
   res.render('user/login');
 };
 
-// Get '/user/logout'
+// GET '/user/logout'
 const logout = (req, res) => {
-  res.send("🚧 UNDER CONSTRUCTION GET '/user/logout'🚧");
+  res.send("🚧 UNDER CONSTRUCTION GET  '/user/logout' 🚧");
 };
 
 // GET '/user/register'
@@ -20,8 +19,19 @@ const register = (req, res) => {
   res.render('user/register');
 };
 
+// POST '/user/register'
+const registerPost = (req, res) => {
+  const { validData, errorData } = req;
+  log.info('Se procesa formulario de registro');
+  res.json({
+    validData,
+    errorData,
+  });
+};
+
 export default {
   login,
   logout,
   register,
+  registerPost,
 };
